@@ -17,3 +17,16 @@
     border-bottom: 2px solid black;
     padding-bottom: 1rem;
 }
+.address-container{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid black;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+#store-address{
+    width: 15rem;
+}
+
