@@ -24,9 +24,39 @@
     border-bottom: 2px solid black;
     padding-bottom: 1rem;
     padding-top: 1rem;
+    display: none;
 }
+
 
 #store-address{
     width: 15rem;
 }
 
+.customer-address{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem;
+    border-bottom: 2px solid black;
+    display: none;
+}
+
+.entry{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+.entry input{
+    width: 15rem;
+}
+
+#order{
+    width: 10%;
+    font-size: 1.2rem;
+    margin: 1rem 7rem;
+}
+
+#city{
+    
+}
