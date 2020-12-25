@@ -8,27 +8,48 @@
 </head>
 <body>
     <div class="container">
-        <form action="">
+        <form onsubmit="return checkValues(this)" onchange="selectType(this)" novalidate>
             <div class="type-container">
         <label for="type" class="label">Type</label>
         <div class="radio-container">
-        <input type="radio" name="pickup" id="pickpup">
+        <input type="radio" name="checkout" value="pickup" id="pickpup">
         <label for="pickup">Pickup</label>
     </div>
         <div class="radio-container">
-        <input type="radio" name="courier" id="courier">
+        <input type="radio" name="checkout" value="courier" id="courier">
         <label for="courier">Courier</label>
     </div>
     </div>
     <div class="address-container">
         <label for="store-address" class="label">Store Address</label>
         <select name="store-address" id="store-address">
-            <option value="studencheskaya">Studencheskaya, 42</option>
-            <option value="studencheskaya">Pesochnaya, 15</option>
-            <option value="studencheskaya">Pushkinskaya, 68</option>
+            <option value="Studencheskaya, 42">Studencheskaya, 42</option>
+            <option value="Pesochnaya, 15">Pesochnaya, 15</option>
+            <option value="Pushkinskaya, 68">Pushkinskaya, 68</option>
         </select>
     </div>
+    <div class="customer-address">
+        <div class="entry">
+        <label for="city" class="label">City</label>
+        <input type="text" name="city" id="city">
+    </div>
+    <div class="entry">
+        <label for="street-address" class="label">Street Address</label>
+        <input type="text" name="street-address" id="street-address" >
+    </div>
+        <div class="entry">
+        <label for="flat" class="label">Flat</label>
+        <input type="text" name="flat" id="flat">
+    </div>
+        <div class="entry">
+        <label for="floor" class="label">Floor</label>
+        <input type="number" name="floor" id="floor" min="1" max="100">
+    </div>
+    </div>
+    <button type="submit" id="order">Check Out</button>
 </form>
+<div id="message1"></div>
+<div id="message2"></div>
 </div>
 </body>
 <script src="script.js"></script>
